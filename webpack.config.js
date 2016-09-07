@@ -33,6 +33,7 @@ function getCommonConfig() {
         output: {
             libraryTarget: 'umd',
             library: 'ESpage'
+
         },
         stats: {
             colors: true,
@@ -47,6 +48,7 @@ function getCommonConfig() {
 function getDevConfig() {
     return {
         output: {
+
             filename: 'dist/es.js'
         },
         module: {
@@ -104,7 +106,6 @@ function getCssLoader() {
         test: /\.css$/,
         loader: "style-loader!css-loader",
         exclude: "node_modules"
-
     };
 }
 
@@ -116,6 +117,7 @@ function getCommonPlugins() {
         }),
         process.env.CI ? undefined : new WebpackNotifierPlugin({
             title: 'es',
+
         })
     ]);
 }
