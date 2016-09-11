@@ -74,7 +74,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	var app = angular.module('esApp', ['ui.router']);
+	var app = angular.module('esApp', ['ui.router', 'fullPage.js']);
 
 	app.config(["$stateProvider", "$urlRouterProvider", function ($stateProvider, $urlRouterProvider) {
 	    $urlRouterProvider.otherwise("/aboutme");
@@ -95,7 +95,16 @@ return /******/ (function(modules) { // webpackBootstrap
 	exports.default = {
 	    name: 'aboutme',
 	    url: '/aboutme',
-	    templateUrl: './app/js/aboutme/aboutme.html'
+	    templateUrl: './app/js/aboutme/aboutme.html',
+	    controller: function controller() {
+	        var _this = this;
+	        _this.mainOptions = {
+	            navigation: true,
+	            navigationPosition: 'right',
+	            scrollingSpeed: 700
+	        };
+	    },
+	    controllerAs: 'aboutmeCtrl'
 	};
 
 /***/ },

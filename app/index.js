@@ -1,7 +1,7 @@
 import aboutmeState from './js/aboutme/config';
 import courschantState from './js/courschant/config';
 import scheduleState from './js/schedule/config';
-var app = angular.module('esApp', ['ui.router']);
+var app = angular.module('esApp', ['ui.router', 'fullPage.js']);
 
 app.config(function($stateProvider, $urlRouterProvider) {
     $urlRouterProvider.otherwise("/aboutme");

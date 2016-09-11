@@ -1,0 +1,38 @@
+.navbar-collapse {
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgba(222, 222, 222, 1)
+}
+
+.nav>li>a:focus,
+.nav>li>a:hover {
+    border-radius: 3px
+}
+
+a {
+    color: #000;
+    font-size: 20px;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font-weight: 300;
+}
+
+h1 {
+    font-size: 50px
+}
+
+#profession {
+    font-family: 'Heebo', sans-serif;
+    font-weight: 700;
+}
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+    background: #000000;
+}
+
+.fp-controlArrow.fp-prev {
+    border-color: transparent #000000 transparent transparent;
+}
+
+.fp-controlArrow.fp-next {
+    border-color: transparent transparent transparent #000000;
+}
