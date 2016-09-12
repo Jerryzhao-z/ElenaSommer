@@ -101,7 +101,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	        _this.mainOptions = {
 	            navigation: true,
 	            navigationPosition: 'right',
-	            scrollingSpeed: 700
+	            scrollingSpeed: 700,
+	            slidesNavigation: true,
+	            slidesNavPosition: 'bottom'
 	        };
 	    },
 	    controllerAs: 'aboutmeCtrl'

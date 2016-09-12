@@ -1,6 +1,7 @@
 import aboutmeState from './js/aboutme/config';
 import courschantState from './js/courschant/config';
 import scheduleState from './js/schedule/config';
+import comments from './js/aboutme/comments/comments';
 var app = angular.module('esApp', ['ui.router', 'fullPage.js']);
 
 app.config(function($stateProvider, $urlRouterProvider) {
@@ -11,4 +12,5 @@ app.config(function($stateProvider, $urlRouterProvider) {
         .state('schedule', scheduleState);
 });
 
+app.directive('comments', comments);
 export default app;
