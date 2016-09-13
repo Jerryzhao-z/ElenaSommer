@@ -12,5 +12,5 @@ app.config(function($stateProvider, $urlRouterProvider) {
         .state('schedule', scheduleState);
 });
 
-app.directive('comments', comments);
+app.directive('comments', ['$timeout', comments]);
 export default app;
