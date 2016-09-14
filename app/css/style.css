@@ -36,3 +36,12 @@ h1 {
 .fp-controlArrow.fp-next {
     border-color: transparent transparent transparent #000000;
 }
+
+
+/*.courschant {
+    background: url(../../img/piano2048.jpg);
+}*/
+
+.courschant {
+    background-color: #000000;
+}
