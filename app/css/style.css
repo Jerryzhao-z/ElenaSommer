@@ -37,11 +37,8 @@ h1 {
     border-color: transparent transparent transparent #000000;
 }
 
-
-/*.courschant {
-    background: url(../../img/piano2048.jpg);
-}*/
-
 .courschant {
-    background-color: #000000;
+    background: url(../../img/piano1500.png);
+    background-attachment: fixed;
+    background-size: cover;
 }

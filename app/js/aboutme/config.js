@@ -5,8 +5,6 @@ export default {
     controller: function() {
         var _this = this;
         _this.mainOptions = {
-            navigation: true,
-            navigationPosition: 'right',
             scrollingSpeed: 700,
             slidesNavigation: true,
             slidesNavPosition: 'bottom'

@@ -1,55 +1,203 @@
 <div full-page options="aboutmeCtrl.mainOptions">
     <div class="section selfPresentation">
-        <div class="row">
-            <div class="col-lg-6">
-                <div id="photo" style="padding-top: 2em;margin-top: 50px;">
-                    <img src="img/face-2.jpg" style="width:490px;height:840px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div id="photo" style="padding-top: 2em;margin-top: 50px;">
+                        <img src="img/face-2.jpg" style="width:490px;height:840px;">
+                    </div>
                 </div>
-            </div>
-            <div class="col-lg-6">
-                <div id="name" style="margin-top: 50px;padding-top: 10em;padding-left: 5em;font-family: 'Raleway', sans-serif;font-weight:300">
-                    <h1>ELENA<br>SOMMER</h1>
+                <div class="col-lg-6">
+                    <div id="name" style="margin-top: 50px;padding-top: 10em;padding-left: 5em;font-family: 'Raleway', sans-serif;font-weight:300">
+                        <h1>ELENA<br>SOMMER</h1>
+                    </div>
+                    <div id="profession" style="padding-left: 5em;padding-top: 10em;">
+                        <h1>Cantatrice & <br>Professeur de chant</h1>
+                    </div>
+                    <div comments></div>
                 </div>
-                <div id="profession" style="padding-left: 5em;padding-top: 10em;">
-                    <h1>Cantatrice & <br>Professeur de chant</h1>
-                </div>
-                <div comments></div>
             </div>
         </div>
     </div>
     <div class="section selfie">
-        <div class="slide">
-            <div style="text-align:center">
-                <iframe width="1024" height="576" src="https://www.youtube.com/embed/ksW06DUfpqY" frameborder="0" allowfullscreen></iframe>
+        <div class="container-fluid">
+            <div class="slide">
+                <div style="text-align:center">
+                    <iframe width="1440" height="810" src="https://www.youtube.com/embed/ksW06DUfpqY" frameborder="0" allowfullscreen></iframe>
+                </div>
             </div>
-        </div>
-        <div class="slide">
-            <div style="text-align:center">
-                <img src="img/photo_34.jpg" style="width:900px;height:660px;">
+            <div class="slide">
+                <div style="text-align:center">
+                    <img src="img/photo_34.jpg" style="width:900px;height:660px;">
+                </div>
             </div>
-        </div>
-        <div class="slide">
-            <div style="text-align:center">
-                <img src="img/photo_69.jpg" style="width:980px;height:750px;">
+            <div class="slide">
+                <div style="text-align:center">
+                    <img src="img/photo_69.jpg" style="width:980px;height:750px;">
+                </div>
             </div>
-        </div>
-        <div class="slide">
-            <div style="text-align:center">
-                <img src="img/photo_82.jpg" style="width:585px;height:780px;">
+            <div class="slide">
+                <div style="text-align:center">
+                    <img src="img/photo_82.jpg" style="width:585px;height:780px;">
+                </div>
             </div>
+            <div class="slide">
+                <div id="gallery" style="margin: 50px">
+                    <div class="body">
+                    </div>
+                </div>
+            </div>
+            <script type="text/javascript">
+                $(document).ready(function() {
+                    PhotoWall.init({
+                        el: '#gallery' // Gallery element
+                            ,
+                        zoom: true // Use zoom
+                            ,
+                        zoomAction: 'mouseenter' // Zoom on action
+                            ,
+                        zoomTimeout: 500 // Timeout before zoom
+                            ,
+                        zoomDuration: 100 // Zoom duration time
+                            ,
+                        zoomImageBorder: 5 // Zoomed image border size 
+                            ,
+                        showBox: true // Enavle fullscreen mode
+                            ,
+                        showBoxSocial: true // Show social buttons
+                            ,
+                        padding: 5 // padding between images in gallery
+                            ,
+                        lineMaxHeight: 150 // Max set height of pictures line
+                            ,
+                        lineMaxHeightDynamic: false // Dynamic lineMaxHeight. If set to True,
+                            // then line height will be changing on 
+                            // resize, coressponding to 
+                            // baseScreenHeight param
+                            ,
+                        baseScreenHeight: 600 // Base screen size from wich calculating dynamic lineMaxHeight  
+                    });
+                    // Max image width form Picasa
+                    // 94, 110, 128, 200, 220, 288, 320, 400, 512, 576, 640, 720, 800, 912, 
+                    // 1024, 1152, 1280, 1440, 1600
+                    var PhotosArray = new Array({
+                        id: 1,
+                        img: './img/photo_55.jpg',
+                        width: 533,
+                        height: 600,
+                        th: {
+                            src: './img/photo_55.jpg',
+                            width: 53,
+                            height: 60,
+                            zoom_src: './img/photo_55.jpg',
+                            zoom_factor: 4
+                        }
+                    }, {
+                        id: 2,
+                        img: './img/photo_58.jpg',
+                        width: 399,
+                        height: 600,
+                        th: {
+                            src: './img/photo_58.jpg',
+                            width: 40,
+                            height: 60,
+                            zoom_src: './img/photo_58.jpg',
+                            zoom_factor: 4
+                        }
+                    }, {
+                        id: 3,
+                        img: './img/photo_66.jpg',
+                        width: 693,
+                        height: 600,
+                        th: {
+                            src: './img/photo_66.jpg',
+                            width: 69,
+                            height: 60,
+                            zoom_src: './img/photo_66.jpg',
+                            zoom_factor: 4
+                        }
+                    }, {
+                        id: 4,
+                        img: './img/photo_67.jpg',
+                        width: 400,
+                        height: 600,
+                        th: {
+                            src: './img/photo_67.jpg',
+                            width: 40,
+                            height: 60,
+                            zoom_src: './img/photo_67.jpg',
+                            zoom_factor: 4
+                        }
+                    });
+
+                    PhotoWall.load(PhotosArray);
+                });
+            </script>
         </div>
     </div>
     <div class="section courses">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6 courstext">
+                </div>
+                <div class="col-lg-6">
+                    <img src="img/piano.png" style="height:60em; float:right">
+                </div>
+            </div>
+        </div>
     </div>
     <div class="section news">
-        ...
+
     </div>
     <div class="section findme">
-        ...
+        <div class="container">
+            <div>Find me in Facebook or leave me a message</div>
+        </div>
     </div>
-</div>div>
-</div>div>
-</div>div>
-</div>div>
-</div>div>
-</div>div>
+</div>
+<div class="row">
+    <div class="col-lg-6 courstext">
+    </div>
+    <div class="col-lg-6">
+        <img src="img/piano.png" style="height:60em; float:right">
+    </div>
+</div>
+</div>
+</div>
+<div class="section news">
+
+</div>
+<div class="section findme">
+    <div class="container">
+        <div>Find me in Facebook or leave me a message</div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+<div class="section news">
+
+</div>
+<div class="section findme">
+    <div class="container">
+        <div>Find me in Facebook or leave me a message</div>
+    </div>
+</div>
+</div>
+<div class="row">
+    <div class="col-lg-6 courstext" data-scrollreveal="enter left after 0s over 1s">
+    </div>
+    <div class="col-lg-6">
+        <img src="img/piano.png" style="height:60em; float:right">
+    </div>
+</div>
+</div>
+</div>
+<div class="section news">
+
+</div>
+<div class="section findme">
+    <div class="container">
+        <div>Find me in Facebook or leave me a message</div>
+    </div>
+</div>

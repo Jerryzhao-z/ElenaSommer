@@ -104,8 +104,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	    controller: function controller() {
 	        var _this = this;
 	        _this.mainOptions = {
-	            navigation: true,
-	            navigationPosition: 'right',
 	            scrollingSpeed: 700,
 	            slidesNavigation: true,
 	            slidesNavPosition: 'bottom'
@@ -127,6 +125,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    name: 'courschant',
 	    url: '/courschant',
 	    templateUrl: './app/js/courschant/courschant.html'
+
 	};
 
 /***/ },
