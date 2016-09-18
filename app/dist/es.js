@@ -72,19 +72,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _config6 = _interopRequireDefault(_config5);
 
-	var _config7 = __webpack_require__(4);
-
-	var _config8 = _interopRequireDefault(_config7);
-
-	var _config9 = __webpack_require__(5);
-
-	var _config10 = _interopRequireDefault(_config9);
-
-	var _config11 = __webpack_require__(6);
-
-	var _config12 = _interopRequireDefault(_config11);
-
-	var _comments = __webpack_require__(7);
+	var _comments = __webpack_require__(4);
 
 	var _comments2 = _interopRequireDefault(_comments);
 
@@ -94,7 +82,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	app.config(["$stateProvider", "$urlRouterProvider", function ($stateProvider, $urlRouterProvider) {
 	    $urlRouterProvider.otherwise("/aboutme");
-	    $stateProvider.state('aboutme', _config2.default).state('courschant', _config4.default).state('schedule', _config6.default).state('photo', _config8.default).state('video', _config10.default).state('biography', _config12.default);
+	    $stateProvider.state('aboutme', _config2.default).state('courschant', _config4.default).state('schedule', _config6.default);
 	}]);
 
 	app.directive('comments', ['$timeout', _comments2.default]);
@@ -138,18 +126,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	exports.default = {
 	    name: 'courschant',
 	    url: '/courschant',
-	    templateUrl: './app/js/courschant/courschant.html',
-	    controller: function controller() {
-	        var _this = this;
-	        _this.mainOptions = {
-	            scrollingSpeed: 700,
-	            navigation: true,
-	            navigationPosition: 'left',
-	            slidesNavigation: true,
-	            slidesNavPosition: 'bottom'
-	        };
-	    },
-	    controllerAs: 'CoursCtrl'
+	    templateUrl: './app/js/courschant/courschant.html'
+
 	};
 
 /***/ },
@@ -164,89 +142,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	exports.default = {
 	    name: 'schedule',
 	    url: '/schedule',
-	    templateUrl: './app/js/schedule/schedule.html',
-	    controller: function controller() {
-	        var _this = this;
-	        _this.mainOptions = {
-	            scrollingSpeed: 700,
-	            navigation: true,
-	            navigationPosition: 'left',
-	            slidesNavigation: true,
-	            slidesNavPosition: 'bottom'
-	        };
-	    },
-	    controllerAs: 'agendaCtrl'
+	    templateUrl: './app/js/schedule/schedule.html'
 	};
 
 /***/ },
 /* 4 */
-/***/ function(module, exports) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-	exports.default = {
-	    name: 'photo',
-	    url: '/photo',
-	    templateUrl: './app/js/photo/photo.html',
-	    controller: function controller() {
-	        var _this = this;
-	        _this.mainOptions = {
-	            scrollingSpeed: 700,
-	            navigation: true,
-	            navigationPosition: 'left',
-	            slidesNavigation: true,
-	            slidesNavPosition: 'bottom'
-	        };
-	    },
-	    controllerAs: 'photoCtrl'
-	};
-
-/***/ },
-/* 5 */
-/***/ function(module, exports) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-	exports.default = {
-	    name: 'video',
-	    url: '/video',
-	    templateUrl: './app/js/video/video.html',
-	    controller: function controller() {
-	        var _this = this;
-	        _this.mainOptions = {
-	            scrollingSpeed: 700,
-	            navigation: true,
-	            navigationPosition: 'left',
-	            slidesNavigation: true,
-	            slidesNavPosition: 'bottom'
-	        };
-	    },
-	    controllerAs: 'videoCtrl'
-	};
-
-/***/ },
-/* 6 */
-/***/ function(module, exports) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-	exports.default = {
-	    name: 'biography',
-	    url: '/biography',
-	    templateUrl: './app/js/biography/biography.html'
-	};
-
-/***/ },
-/* 7 */
 /***/ function(module, exports) {
 
 	'use strict';

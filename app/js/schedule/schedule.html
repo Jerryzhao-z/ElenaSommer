@@ -1,1 +1,70 @@
-<h1>schedule</h1>
+<nav class="navbar navbar-collapse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">ELENA SOMMER</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a ui-sref="aboutme">ELENA</a>
+                </li>
+                <li>
+                    <a ui-sref="biography">Biography</a>
+                </li>
+                <li>
+                    <a ui-sref="video">Video</a>
+                </li>
+                <li>
+                    <a ui-sref="photo">Photo</a>
+                </li>
+                <li>
+                    <a ui-sref="courschant">Cours de chant</a>
+                </li>
+                <li>
+                    <a ui-sref="schedule">Agenda</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+<div full-page options="agendaCtrl.mainOptions">
+    <div class="section findme">
+        <div class="container-fluid" style="text-align: center;">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div>
+                        <a href="https://www.facebook.com/elena.sommer.338"><img class="socialnetwork" src="app/img/FB-f-Logo__blue_100.png" alt="fb" width="100" height="100w"></a>
+                    </div>
+                    <br>
+                    <h1 style="font-family: 'Raleway', sans-serif;font-weight:300">Retrouvez-lui sur Facebook</h1>
+                </div>
+                <div class="col-lg-6" style="border-left-style: solid;border-left-width: 1px;border-left-color: #000000;">
+                    <div class="leaveMessage">
+                        <h1 style="font-family: 'Raleway', sans-serif;font-weight:300;color:#009688;">Laissez-lui un message</h1>
+                        <div id="messageForm" style="margin-top:3em">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="form-group" style="padding:3px">
+                                        <input type="text" placeholder="NAME" style="width:100%">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group" style="padding:3px">
+                                        <input type="text" placeholder="EMAIL" style="width:100%">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group" style="padding:3px">
+                                <input type="text" placeholder="SUBJECT" style="width:100%">
+                            </div>
+                            <div class="form-group" style="padding:3px">
+                                <textarea placeholder="MESSAGE" style="width:100%; height:12em"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,7 +1,7 @@
 export default {
-    name: 'courschant',
-    url: '/courschant',
-    templateUrl: './app/js/courschant/courschant.html',
+    name: 'photo',
+    url: '/photo',
+    templateUrl: './app/js/photo/photo.html',
     controller: function() {
         var _this = this;
         _this.mainOptions = {
@@ -12,5 +12,5 @@ export default {
             slidesNavPosition: 'bottom',
         };
     },
-    controllerAs: 'CoursCtrl'
+    controllerAs: 'photoCtrl'
 };
