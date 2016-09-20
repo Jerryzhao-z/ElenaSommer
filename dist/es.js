@@ -90,7 +90,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	var app = angular.module('esApp', ['ui.router', 'fullPage.js']);
+	var app = angular.module('esApp', ['ui.router', 'fullPage.js', 'ngScrollable']);
 
 	app.config(["$stateProvider", "$urlRouterProvider", function ($stateProvider, $urlRouterProvider) {
 	    $urlRouterProvider.otherwise("/aboutme");
@@ -116,11 +116,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    controller: function controller() {
 	        var _this = this;
 	        _this.mainOptions = {
-	            scrollingSpeed: 700,
-	            navigation: true,
-	            navigationPosition: 'left',
-	            slidesNavigation: true,
-	            slidesNavPosition: 'bottom'
+	            scrollingSpeed: 700
 	        };
 	    },
 	    controllerAs: 'aboutmeCtrl'
@@ -143,8 +139,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	        var _this = this;
 	        _this.mainOptions = {
 	            scrollingSpeed: 700,
-	            navigation: true,
-	            navigationPosition: 'left',
 	            slidesNavigation: true,
 	            slidesNavPosition: 'bottom'
 	        };
@@ -169,8 +163,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	        var _this = this;
 	        _this.mainOptions = {
 	            scrollingSpeed: 700,
-	            navigation: true,
-	            navigationPosition: 'left',
 	            slidesNavigation: true,
 	            slidesNavPosition: 'bottom'
 	        };
@@ -195,8 +187,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	        var _this = this;
 	        _this.mainOptions = {
 	            scrollingSpeed: 700,
-	            navigation: true,
-	            navigationPosition: 'left',
 	            slidesNavigation: true,
 	            slidesNavPosition: 'bottom'
 	        };
@@ -221,8 +211,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	        var _this = this;
 	        _this.mainOptions = {
 	            scrollingSpeed: 700,
-	            navigation: true,
-	            navigationPosition: 'left',
 	            slidesNavigation: true,
 	            slidesNavPosition: 'bottom'
 	        };

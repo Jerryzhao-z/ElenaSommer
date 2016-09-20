@@ -6,7 +6,7 @@ import videoState from './js/video/config';
 import biographyState from './js/biography/config';
 
 import comments from './js/aboutme/comments/comments';
-var app = angular.module('esApp', ['ui.router', 'fullPage.js']);
+var app = angular.module('esApp', ['ui.router', 'fullPage.js', 'ngScrollable']);
 
 app.config(function($stateProvider, $urlRouterProvider) {
     $urlRouterProvider.otherwise("/aboutme");

@@ -3,6 +3,14 @@
     border-color: rgba(222, 222, 222, 1)
 }
 
+.videoup {
+    border-color: rgba(255, 255, 255, 0);
+}
+
+.videoup:hover {
+    background-color: rgba(255, 255, 255, 0.5)
+}
+
 .video-stream {
     display: block;
     width: 100%;
@@ -70,4 +78,11 @@ h1 {
 
 .fp-controlArrow.fp-next {
     right: 60px
+}
+
+.scrollable .scrollable-slider {
+    background-color: #000;
+    background-image: linear-gradient(to right, #000, #000);
+    border: 1px solid #333;
+    border: 1px solid rgb(0, 0, 0);
 }

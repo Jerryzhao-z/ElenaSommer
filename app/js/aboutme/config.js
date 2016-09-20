@@ -5,11 +5,7 @@ export default {
     controller: function() {
         var _this = this;
         _this.mainOptions = {
-            scrollingSpeed: 700,
-            navigation: true,
-            navigationPosition: 'left',
-            slidesNavigation: true,
-            slidesNavPosition: 'bottom',
+            scrollingSpeed: 700
         };
     },
     controllerAs: 'aboutmeCtrl'
